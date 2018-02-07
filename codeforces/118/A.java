@@ -1,17 +1,22 @@
 import java.util.Scanner;
-public class task {
-	public static void main(String[] args) {
-    Scanner input =new Scanner(System.in);
-    String h = input.next();
-    String q = h.toLowerCase();
-    input.nextLine();
-    for(int i=0;i<h.length();i++)
-    {
-    	char c =q.charAt(i);
-    	if(c=='a'||c=='o'||c=='y'||c=='e'||c=='u'||c=='i'){}
-    	else 
-    	System.out.print("."+c);
-    }
-	}
 
+public class nextround {
+
+	public static void main(String[] args) {
+Scanner input = new Scanner(System.in);
+String x = input.nextLine();
+String y = "";
+String z ="" ;
+z =  x.toLowerCase();
+
+for (int i= 0; i<x.length();i++){
+	if( (z.charAt(i)=='a')||(z.charAt(i)=='o')||(z.charAt(i)=='i')||(z.charAt(i)=='u')||(z.charAt(i)=='y')||(z.charAt(i)=='e')){
+		
+	}
+	else {
+		
+		y = y+'.'+ z.substring(i,i+1);
+	}
 }
+System.out.println(y);
+}}
