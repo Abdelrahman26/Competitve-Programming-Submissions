@@ -1,19 +1,23 @@
 import java.util.Scanner;
 
+public class nextround {
 
-public class bit {
 	public static void main(String[] args) {
-Scanner input =new Scanner(System.in);
+Scanner input = new Scanner(System.in);
+int x= 0 ;
 int n = input.nextInt();
-String [] x = new String[n];
-int count = 0;
-for(int i=0;i<n;i++)
-{
-	x[i]=input.next();
-	if(x[i].equals("++X")||x[i].equals("X++"))count++;
-	else count--;
-}
-System.out.println(count);
+  
+for(int i=0;i<n+1;i++){
+	String q = input.nextLine();
+	if ((q.equals("++X"))||(q.equals("+X+"))||(q.equals("X++"))){
+		x++;
 	}
-
+	if ((q.equals("-X-"))||(q.equals("--X"))||(q.equals("X--"))){
+		x--;}
 }
+System.out.println(x);
+		
+		
+	
+
+}}
