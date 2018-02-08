@@ -89,6 +89,23 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF35068315": {
+    "contest_id": 96,
+    "language": "Java 8",
+    "path": "codeforces\\96\\A.java",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Football",
+    "problem_url": "https://codeforces.com/contest/96/problem/A",
+    "submission_id": "CF35068315",
+    "submission_url": "https://codeforces.com/contest/96/submission/35068315",
+    "tags": [
+      "implementation",
+      "strings",
+      "*900"
+    ],
+    "timestamp": "Feb/08/2018 19:55"
+  },
   "CF35073016": {
     "contest_id": 112,
     "language": "Java 8",
