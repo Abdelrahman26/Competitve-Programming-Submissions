@@ -89,6 +89,24 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF35268700": {
+    "contest_id": 158,
+    "language": "Java 8",
+    "path": "codeforces\\158\\B.java",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Taxi",
+    "problem_url": "https://codeforces.com/contest/158/problem/B",
+    "submission_id": "CF35268700",
+    "submission_url": "https://codeforces.com/contest/158/submission/35268700",
+    "tags": [
+      "*special problem",
+      "greedy",
+      "implementation",
+      "*1100"
+    ],
+    "timestamp": "Feb/14/2018 18:14"
+  },
   "CF35270370": {
     "contest_id": 266,
     "language": "Java 8",
