@@ -89,6 +89,24 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF35431037": {
+    "contest_id": 236,
+    "language": "Java 8",
+    "path": "codeforces\\236\\A.java",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Boy or Girl",
+    "problem_url": "https://codeforces.com/contest/236/problem/A",
+    "submission_id": "CF35431037",
+    "submission_url": "https://codeforces.com/contest/236/submission/35431037",
+    "tags": [
+      "brute force",
+      "implementation",
+      "strings",
+      "*800"
+    ],
+    "timestamp": "Feb/17/2018 22:41"
+  },
   "CF35502351": {
     "contest_id": 59,
     "language": "Java 8",
