@@ -8,7 +8,7 @@ public class startup {
 	int price = input.nextInt();
 	int r     = input.nextInt();
 	int m     = 0;
-	for(int i =1 ;i!=0;i++){
+	for(int i =1 ;i<10;i++){
 		m=price*i;
 		if((m-r)%10==0||m%10==0){
 			System.out.println(i);
