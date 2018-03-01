@@ -12,8 +12,7 @@ public class startup {
 		m=price*i;
 		if((m-r)%10==0||m%10==0){
 			System.out.println(i);
-			
-			  break;
+			break;
 			}
 	}
 	}
