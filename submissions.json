@@ -89,6 +89,24 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF36622862": {
+    "contest_id": 490,
+    "language": "Java 8",
+    "path": "codeforces\\490\\A.java",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Team Olympiad",
+    "problem_url": "https://codeforces.com/contest/490/problem/A",
+    "submission_id": "CF36622862",
+    "submission_url": "https://codeforces.com/contest/490/submission/36622862",
+    "tags": [
+      "greedy",
+      "implementation",
+      "sortings",
+      "*800"
+    ],
+    "timestamp": "Mar/25/2018 18:53"
+  },
   "CF36862442": {
     "contest_id": 770,
     "language": "Java 8",
