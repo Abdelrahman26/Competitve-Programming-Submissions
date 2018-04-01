@@ -89,6 +89,23 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF36862442": {
+    "contest_id": 770,
+    "language": "Java 8",
+    "path": "codeforces\\770\\A.java",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "New Password",
+    "problem_url": "https://codeforces.com/contest/770/problem/A",
+    "submission_id": "CF36862442",
+    "submission_url": "https://codeforces.com/contest/770/submission/36862442",
+    "tags": [
+      "*special problem",
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Apr/01/2018 21:36"
+  },
   "CF37122588": {
     "contest_id": 766,
     "language": "Java 8",
