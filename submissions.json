@@ -89,6 +89,23 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF39778543": {
+    "contest_id": 768,
+    "language": "Java 8",
+    "path": "codeforces\\768\\A.java",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Oath of the Night's Watch",
+    "problem_url": "https://codeforces.com/contest/768/problem/A",
+    "submission_id": "CF39778543",
+    "submission_url": "https://codeforces.com/contest/768/submission/39778543",
+    "tags": [
+      "constructive algorithms",
+      "sortings",
+      "*900"
+    ],
+    "timestamp": "Jun/29/2018 20:40"
+  },
   "CF39781238": {
     "contest_id": 158,
     "language": "Java 8",
