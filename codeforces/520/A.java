@@ -1,25 +1,37 @@
 import java.util.Scanner;
-public class pangram {
+
+
+public class Pangram {
 	public static void main(String[] args) {
 Scanner input =new Scanner(System.in);
-int n= input.nextInt();
+int q =0;
+int n = input.nextInt();
 input.nextLine();
-String q = input.nextLine();
-String s =q.toLowerCase();
-int  [] frequency = new int[26];
-int count =0;
+String x =input.nextLine();
+char [] y =new char[n];
+int   count = 0;
 for(int i=0;i<n;i++)
-     {
-	int w =s.charAt(i);
-	     frequency[w-97]++;
-	 }
-for(int i=0;i<26;i++)
 {
-	if(frequency[i]>0)count++;
+         char m =x.charAt(i);
+	   m= Character.toLowerCase(m);
+	     y[i]   = m  ;
+}
+	
+for(int i =0;i<n;i++)
+{
+	for (int j=i-1;j!=-1;j--)
+	{
+		if(y[j]==y[i])
+		{
+			 q = 1;
+			 break;
+		}
+    }
+	if(q==0)count++;
+	   q=0;
 }
 if(count==26)System.out.println("YES");
-else 
-System.out.println("NO");
+else System.out.println("NO");
 
 
 	}
