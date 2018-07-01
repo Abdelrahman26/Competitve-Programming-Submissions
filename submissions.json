@@ -89,6 +89,23 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF39822997": {
+    "contest_id": 160,
+    "language": "Java 8",
+    "path": "codeforces\\160\\A.java",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Twins",
+    "problem_url": "https://codeforces.com/contest/160/problem/A",
+    "submission_id": "CF39822997",
+    "submission_url": "https://codeforces.com/contest/160/submission/39822997",
+    "tags": [
+      "greedy",
+      "sortings",
+      "*900"
+    ],
+    "timestamp": "Jul/01/2018 15:54"
+  },
   "CF39844902": {
     "contest_id": 474,
     "language": "Java 8",
