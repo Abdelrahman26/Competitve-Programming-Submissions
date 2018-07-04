@@ -89,6 +89,23 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF39966373": {
+    "contest_id": 520,
+    "language": "Java 8",
+    "path": "codeforces\\520\\A.java",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Pangram",
+    "problem_url": "https://codeforces.com/contest/520/problem/A",
+    "submission_id": "CF39966373",
+    "submission_url": "https://codeforces.com/contest/520/submission/39966373",
+    "tags": [
+      "implementation",
+      "strings",
+      "*800"
+    ],
+    "timestamp": "Jul/04/2018 22:21"
+  },
   "CF40011787": {
     "contest_id": 886,
     "language": "Java 8",
