@@ -89,6 +89,21 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF40011787": {
+    "contest_id": 886,
+    "language": "Java 8",
+    "path": "codeforces\\886\\B.java",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Vlad and Cafes",
+    "problem_url": "https://codeforces.com/contest/886/problem/B",
+    "submission_id": "CF40011787",
+    "submission_url": "https://codeforces.com/contest/886/submission/40011787",
+    "tags": [
+      "*1000"
+    ],
+    "timestamp": "Jul/05/2018 22:44"
+  },
   "CF40011862": {
     "contest_id": 886,
     "language": "Java 8",

@@ -15,7 +15,7 @@ for(int i=1;i<=n;i++)
 }
 int min = 2000001;
 int index = 0;
-	for(int i=0;i<=200000;i++)
+	for(int i=0;i<=max;i++)
 {
 	if(sequence[i]<min&&sequence[i]>0)
 	{
