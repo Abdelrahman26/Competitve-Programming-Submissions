@@ -89,6 +89,23 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF40045859": {
+    "contest_id": 368,
+    "language": "Java 8",
+    "path": "codeforces\\368\\B.java",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Sereja and Suffixes",
+    "problem_url": "https://codeforces.com/contest/368/problem/B",
+    "submission_id": "CF40045859",
+    "submission_url": "https://codeforces.com/contest/368/submission/40045859",
+    "tags": [
+      "data structures",
+      "dp",
+      "*1100"
+    ],
+    "timestamp": "Jul/07/2018 00:31"
+  },
   "CF40182013": {
     "contest_id": 75,
     "language": "Java 8",
