@@ -89,6 +89,22 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF40213359": {
+    "contest_id": 598,
+    "language": "Java 8",
+    "path": "codeforces\\598\\A.java",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Tricky Sum",
+    "problem_url": "https://codeforces.com/contest/598/problem/A",
+    "submission_id": "CF40213359",
+    "submission_url": "https://codeforces.com/contest/598/submission/40213359",
+    "tags": [
+      "math",
+      "*900"
+    ],
+    "timestamp": "Jul/12/2018 01:33"
+  },
   "CF40489431": {
     "contest_id": 466,
     "language": "Java 8",
