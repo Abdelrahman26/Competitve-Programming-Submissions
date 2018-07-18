@@ -89,6 +89,23 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF40522215": {
+    "contest_id": 902,
+    "language": "Java 8",
+    "path": "codeforces\\902\\A.java",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Visiting a Friend",
+    "problem_url": "https://codeforces.com/contest/902/problem/A",
+    "submission_id": "CF40522215",
+    "submission_url": "https://codeforces.com/contest/902/submission/40522215",
+    "tags": [
+      "greedy",
+      "implementation",
+      "*1100"
+    ],
+    "timestamp": "Jul/18/2018 19:17"
+  },
   "CF40528710": {
     "contest_id": 749,
     "language": "Java 8",
