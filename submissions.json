@@ -89,6 +89,22 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF40585999": {
+    "contest_id": 675,
+    "language": "Java 8",
+    "path": "codeforces\\675\\A.java",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Infinite Sequence",
+    "problem_url": "https://codeforces.com/contest/675/problem/A",
+    "submission_id": "CF40585999",
+    "submission_url": "https://codeforces.com/contest/675/submission/40585999",
+    "tags": [
+      "math",
+      "*1100"
+    ],
+    "timestamp": "Jul/20/2018 19:40"
+  },
   "CF40683022": {
     "contest_id": 404,
     "language": "Java 8",
