@@ -89,6 +89,23 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF40755007": {
+    "contest_id": 807,
+    "language": "Java 8",
+    "path": "codeforces\\807\\A.java",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Is it rated?",
+    "problem_url": "https://codeforces.com/contest/807/problem/A",
+    "submission_id": "CF40755007",
+    "submission_url": "https://codeforces.com/contest/807/submission/40755007",
+    "tags": [
+      "implementation",
+      "sortings",
+      "*900"
+    ],
+    "timestamp": "Jul/25/2018 23:10"
+  },
   "CF40756289": {
     "contest_id": 584,
     "language": "Java 8",
