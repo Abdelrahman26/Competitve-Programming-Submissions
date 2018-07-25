@@ -89,6 +89,22 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF40752269": {
+    "contest_id": 318,
+    "language": "Java 8",
+    "path": "codeforces\\318\\A.java",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Even Odds",
+    "problem_url": "https://codeforces.com/contest/318/problem/A",
+    "submission_id": "CF40752269",
+    "submission_url": "https://codeforces.com/contest/318/submission/40752269",
+    "tags": [
+      "math",
+      "*900"
+    ],
+    "timestamp": "Jul/25/2018 20:39"
+  },
   "CF40754169": {
     "contest_id": 469,
     "language": "Java 8",
