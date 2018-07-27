@@ -89,6 +89,22 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF40860646": {
+    "contest_id": 556,
+    "language": "Java 8",
+    "path": "codeforces\\556\\A.java",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Case of the Zeros and Ones",
+    "problem_url": "https://codeforces.com/contest/556/problem/A",
+    "submission_id": "CF40860646",
+    "submission_url": "https://codeforces.com/contest/556/submission/40860646",
+    "tags": [
+      "greedy",
+      "*900"
+    ],
+    "timestamp": "Jul/27/2018 22:53"
+  },
   "CF40862820": {
     "contest_id": 43,
     "language": "Java 8",
