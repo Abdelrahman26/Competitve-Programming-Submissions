@@ -89,6 +89,24 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF41210043": {
+    "contest_id": 1016,
+    "language": "Java 8",
+    "path": "codeforces\\1016\\A.java",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Death Note",
+    "problem_url": "https://codeforces.com/contest/1016/problem/A",
+    "submission_id": "CF41210043",
+    "submission_url": "https://codeforces.com/contest/1016/submission/41210043",
+    "tags": [
+      "greedy",
+      "implementation",
+      "math",
+      "*900"
+    ],
+    "timestamp": "Aug/04/2018 12:02"
+  },
   "CF41345867": {
     "contest_id": 1017,
     "language": "Java 8",
