@@ -1,10 +1,15 @@
 import java.util.Scanner;
+import java.io.PrintWriter;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException ;
+import java.util.StringTokenizer;
 public class ff {
-	public static void main(String[] args) {
-		Scanner input =new Scanner(System.in);
-    int n =input.nextInt();
+	public static void main(String[] args) throws IOException{
+		FastReader read =new FastReader();
+    int n =read.nextInt();
     int [] x =new int [n];
-    for(int i=0;i<n;i++)x[i]=input.nextInt();
+    for(int i=0;i<n;i++)x[i]=read.nextInt();
     int max = 0,min=0,min2=0,count=0;
     for(int i=0;i<n;i++)
     {
@@ -40,6 +45,49 @@ public class ff {
 	}
 
 }
-
+class FastReader{
+    BufferedReader br ;
+    StringTokenizer st;
+  public FastReader(){
+        InputStreamReader inr =new InputStreamReader(System.in);
+        br=new BufferedReader(inr);
+        
+    }
+    
+    String next(){
+        while(st==null || !st.hasMoreElements()){
+        try{
+        st=new StringTokenizer(br.readLine());
+        }
+        catch(IOException e){
+            e.printStackTrace();
+        }}
+        return st.nextToken();
+    }
+    
+    int nextInt(){
+        return Integer.parseInt(next());
+    }
+    
+    double nextDouble(){
+        return Double.parseDouble(next());
+        
+    }
+    
+    long nextLong(){
+        return Long.parseLong(next());
+    }
     
     
+    String nextLine(){
+        String str="";
+        try{
+            str=br.readLine();
+        }
+        catch(IOException e)
+        {
+            e.printStackTrace();
+        }
+        return str;
+    }
+}

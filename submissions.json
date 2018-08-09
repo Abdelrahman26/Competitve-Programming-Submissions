@@ -89,6 +89,23 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF41409704": {
+    "contest_id": 66,
+    "language": "Java 8",
+    "path": "codeforces\\66\\B.java",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Petya and Countryside",
+    "problem_url": "https://codeforces.com/contest/66/problem/B",
+    "submission_id": "CF41409704",
+    "submission_url": "https://codeforces.com/contest/66/submission/41409704",
+    "tags": [
+      "brute force",
+      "implementation",
+      "*1100"
+    ],
+    "timestamp": "Aug/09/2018 21:13"
+  },
   "CF41409738": {
     "contest_id": 66,
     "language": "Java 8",
