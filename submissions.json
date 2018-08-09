@@ -89,6 +89,23 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF41403581": {
+    "contest_id": 746,
+    "language": "Java 8",
+    "path": "codeforces\\746\\B.java",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Decoding",
+    "problem_url": "https://codeforces.com/contest/746/problem/B",
+    "submission_id": "CF41403581",
+    "submission_url": "https://codeforces.com/contest/746/submission/41403581",
+    "tags": [
+      "implementation",
+      "strings",
+      "*900"
+    ],
+    "timestamp": "Aug/09/2018 17:10"
+  },
   "CF41409704": {
     "contest_id": 66,
     "language": "Java 8",
