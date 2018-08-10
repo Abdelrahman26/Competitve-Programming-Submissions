@@ -89,6 +89,24 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF41436287": {
+    "contest_id": 16,
+    "language": "Java 8",
+    "path": "codeforces\\16\\B.java",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Burglar and Matches",
+    "problem_url": "https://codeforces.com/contest/16/problem/B",
+    "submission_id": "CF41436287",
+    "submission_url": "https://codeforces.com/contest/16/submission/41436287",
+    "tags": [
+      "greedy",
+      "implementation",
+      "sortings",
+      "*900"
+    ],
+    "timestamp": "Aug/10/2018 17:18"
+  },
   "CF41630315": {
     "contest_id": 102,
     "language": "Java 8",
