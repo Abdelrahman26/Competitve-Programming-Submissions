@@ -89,6 +89,23 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF41806895": {
+    "contest_id": 1027,
+    "language": "Java 8",
+    "path": "codeforces\\1027\\A.java",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Palindromic Twist",
+    "problem_url": "https://codeforces.com/contest/1027/problem/A",
+    "submission_id": "CF41806895",
+    "submission_url": "https://codeforces.com/contest/1027/submission/41806895",
+    "tags": [
+      "implementation",
+      "strings",
+      "*1000"
+    ],
+    "timestamp": "Aug/19/2018 00:36"
+  },
   "CF41808842": {
     "contest_id": 1023,
     "language": "Java 8",
