@@ -89,6 +89,24 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF43161632": {
+    "contest_id": 1051,
+    "language": "Java 8",
+    "path": "codeforces\\1051\\A.java",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Vasya And Password",
+    "problem_url": "https://codeforces.com/contest/1051/problem/A",
+    "submission_id": "CF43161632",
+    "submission_url": "https://codeforces.com/contest/1051/submission/43161632",
+    "tags": [
+      "greedy",
+      "implementation",
+      "strings",
+      "*1200"
+    ],
+    "timestamp": "Sep/21/2018 03:44"
+  },
   "CF43225541": {
     "contest_id": 1051,
     "language": "Java 8",
