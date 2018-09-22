@@ -89,6 +89,26 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF43264575": {
+    "contest_id": 1051,
+    "language": "Java 8",
+    "path": "codeforces\\1051\\C.java",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Vasya and Multisets",
+    "problem_url": "https://codeforces.com/contest/1051/problem/C",
+    "submission_id": "CF43264575",
+    "submission_url": "https://codeforces.com/contest/1051/submission/43264575",
+    "tags": [
+      "brute force",
+      "dp",
+      "greedy",
+      "implementation",
+      "math",
+      "*1500"
+    ],
+    "timestamp": "Sep/22/2018 17:52"
+  },
   "CF43299460": {
     "contest_id": 1058,
     "language": "Java 8",
