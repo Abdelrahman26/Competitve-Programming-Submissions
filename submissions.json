@@ -89,6 +89,22 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF43299460": {
+    "contest_id": 1058,
+    "language": "Java 8",
+    "path": "codeforces\\1058\\A.java",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "In Search of an Easy Problem",
+    "problem_url": "https://codeforces.com/contest/1058/problem/A",
+    "submission_id": "CF43299460",
+    "submission_url": "https://codeforces.com/contest/1058/submission/43299460",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Sep/23/2018 15:12"
+  },
   "CF43949465": {
     "contest_id": 227,
     "language": "Java 8",
