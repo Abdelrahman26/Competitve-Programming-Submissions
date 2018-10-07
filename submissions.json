@@ -89,6 +89,22 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF43949465": {
+    "contest_id": 227,
+    "language": "Java 8",
+    "path": "codeforces\\227\\B.java",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Effective Approach",
+    "problem_url": "https://codeforces.com/contest/227/problem/B",
+    "submission_id": "CF43949465",
+    "submission_url": "https://codeforces.com/contest/227/submission/43949465",
+    "tags": [
+      "implementation",
+      "*1100"
+    ],
+    "timestamp": "Oct/07/2018 17:31"
+  },
   "CF43974439": {
     "contest_id": 78,
     "language": "Java 8",
