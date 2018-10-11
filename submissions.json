@@ -89,6 +89,23 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF44127204": {
+    "contest_id": 1065,
+    "language": "Java 8",
+    "path": "codeforces\\1065\\A.java",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Vasya and Chocolate",
+    "problem_url": "https://codeforces.com/contest/1065/problem/A",
+    "submission_id": "CF44127204",
+    "submission_url": "https://codeforces.com/contest/1065/submission/44127204",
+    "tags": [
+      "implementation",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Oct/11/2018 17:11"
+  },
   "CF44332416": {
     "contest_id": 230,
     "language": "Java 8",
