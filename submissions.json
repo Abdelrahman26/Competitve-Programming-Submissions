@@ -89,6 +89,23 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF44337943": {
+    "contest_id": 762,
+    "language": "Java 8",
+    "path": "codeforces\\762\\A.java",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "k-th divisor",
+    "problem_url": "https://codeforces.com/contest/762/problem/A",
+    "submission_id": "CF44337943",
+    "submission_url": "https://codeforces.com/contest/762/submission/44337943",
+    "tags": [
+      "math",
+      "number theory",
+      "*1400"
+    ],
+    "timestamp": "Oct/15/2018 01:56"
+  },
   "CF44483373": {
     "contest_id": 122,
     "language": "Java 8",
