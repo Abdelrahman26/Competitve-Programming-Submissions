@@ -6,35 +6,40 @@ import java.io.IOException ;
 import java.util.StringTokenizer;
 public class Main {
 	public static void main(String[] args) throws IOException{
-		FastReader input =new FastReader();    
-		int n =input.nextInt();
-			 //the default value for boolean is false;
-			 boolean [] z =new boolean [1000001];
-			 for(int i=2;i<1000001;i++) 
-		            z[i] = true;
-			 for(int i=2;i*i<=1000000;i++)
-			 {
-				 if(z[i]==true)
-				 {
-					 for(int j =i*2;j<=1000000;j +=i)
-					 {
-						 z[j]=false;
-					 }
-				 }
-			 }
-			for(int i=0;i<n;i++)
-			{
-				double t = input.nextDouble();
-				t = Math.sqrt(t);
-				if(t==(int)t)
-				{
-					int y =(int)t;
-					if (z[y]==true)System.out.println("YES");
-					else System.out.println("NO");
-				}
-				else System.out.println("NO");
-			}
+		FastReader input =new FastReader();    int n =input.nextInt();
+    for(int i=0;i<n;i++)
+    {
+    	double s = input.nextDouble();
+    	double ss= Math.sqrt(s);
+    	int dd =(int)ss;
+    	if (ss != (int)ss)
+    	{
+    	  System.out.println("NO");
+    	}
+    	
+    	else if (dd%2==0&&dd!=2)
+    	{
+    		System.out.println("NO");
+    	}
+        else if (dd==4)System.out.println("YES");
+    	else 
+    	{
+    	
+    	if(isprime(dd)==true)System.out.println("YES");
+    	else System.out.println("NO");
+    	}
     } 
+	 }
+	 static boolean isprime(int x)
+	 {
+		 if(x==2)return true;
+		 if(x<2||x%2==0) return false;
+		 for(int i=3;i*i<=x;i+=2)
+		 {
+			 if(x%i==0)return false;
+		 }
+		 return true;
+	 }
 }
 class FastReader{
     BufferedReader br ;
