@@ -5,11 +5,8 @@ using namespace std;
 #define loop(n)  for(int i=0;i<n;i++)
 #define loope(n)  for(int i=1;i<=n;i++)
 #define loopp(n)   for(int i=0;i<=n;i++);
-#define endl '\n'
 int main()
 {
-    cin.tie(0);
-    cin.sync_with_stdio(0);
     int n,k;
     cin>>n>>k;
    int kk=k;
