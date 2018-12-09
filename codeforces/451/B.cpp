@@ -4,9 +4,10 @@
 using namespace std;
 #define loop(n)  for(int i=0;i<n;i++)
 #define endl '\n'
-
-void revers(int a [] ,int l ,int r,int length )
+/*
+void revers(int a [] ,int l ,int r)
 {
+    int length = sizeof(a)/sizeof(a[0]);
     int c[length] ;loop(length)c[i]=0;
     for(int i=l,j=r;i<=r;i++,j--)
     {
@@ -18,7 +19,7 @@ void revers(int a [] ,int l ,int r,int length )
     }
 
 }
-
+*/
 int main()
 {
     cin.tie(0);
@@ -56,8 +57,8 @@ int main()
            cout<<"yes"<<endl<<"1 1";
            return 0 ;
        }
-     //  reverse(a+l,a+r+1);
-         revers(a,l,r,length);
+       reverse(a+l,a+r+1);
+      // revers(a,l,r);
        loop(length)
        {
            if(a[i]!=b[i])
