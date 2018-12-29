@@ -89,6 +89,23 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF47707466": {
+    "contest_id": 312,
+    "language": "GNU C++17",
+    "path": "codeforces\\312\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Whose sentence is it?",
+    "problem_url": "https://codeforces.com/contest/312/problem/A",
+    "submission_id": "CF47707466",
+    "submission_url": "https://codeforces.com/contest/312/submission/47707466",
+    "tags": [
+      "implementation",
+      "strings",
+      "*1100"
+    ],
+    "timestamp": "Dec/29/2018 23:55"
+  },
   "CF48013576": {
     "contest_id": 1088,
     "language": "GNU C++17",
