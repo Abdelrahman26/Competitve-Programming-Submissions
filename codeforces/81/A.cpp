@@ -22,26 +22,24 @@ string itos(t i){
  }
 int main()
 {
-    cin.tie(0);
-cin.sync_with_stdio(0);
 string x;
 cin>>x;
 stack<char>s;
-//char y[x.size()];
-//strcpy(y, x.c_str());
-loop(x.size()){
+char y[x.size()];
+strcpy(y, x.c_str());
+loop(sizeof(y)){
     if(!s.empty()){
-        if(s.top()==x[i])s.pop();
-        else s.push(x[i]);
+        if(s.top()==y[i])s.pop();
+        else s.push(y[i]);
     }
     else s.push(x[i]);
 }
-x.clear();
+string a="";
 int w = s.size();
 loop(w){
-   x+=s.top();
-            s.pop();
+   a+=s.top();
+          s.pop();
     }
-     reverse(x.begin(), x.end());
-     cout<<x;
+     reverse(a.begin(), a.end());
+    cout<<a;
 }
