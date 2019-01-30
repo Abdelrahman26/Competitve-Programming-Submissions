@@ -23,19 +23,20 @@ string itos(t i){
  }
  int n;
  string x;
+ int arr[130];
 int main()
 {
 cin.tie(0);
 cin.sync_with_stdio(0);
 cin>>n>>x;
-map<int,int>mp;
 if(n==1){
     cout<<"YES";
         return 0;
 }
+
 loop(n){
-   mp[x[i]]++;
-    if(mp[x[i]]>1){
+    arr[x[i]]++;
+    if(arr[x[i]]>1){
         cout<<"YES";
         return 0;
     }
