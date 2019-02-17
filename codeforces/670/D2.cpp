@@ -31,14 +31,17 @@
     for(int i=0;i<n;i++) cin>>x[i].second;
     ll l=1,r=2*1e9;
     int w = k;
-     bool q = check_value(x,1);
-     if(q==0){
+    loop(n){
+    if(x[i].second<x[i].first)
+    if(x[i].second+w<x[i].first){
             cout<<0;
-            return 0;
-     }
+    return 0;
+    }
+    else w-= x[i].first - x[i].second;
+    }
     while(l<r){
        ll mid = l+(r-l+1)/2;
-        q = check_value(x,mid);
+        bool q = check_value(x,mid);
         if(q==true)l=mid;
         else r = mid-1;
     }
