@@ -89,6 +89,23 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF51104739": {
+    "contest_id": 79,
+    "language": "GNU C++17",
+    "path": "codeforces\\79\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Colorful Field",
+    "problem_url": "https://codeforces.com/contest/79/problem/B",
+    "submission_id": "CF51104739",
+    "submission_url": "https://codeforces.com/contest/79/submission/51104739",
+    "tags": [
+      "implementation",
+      "sortings",
+      "*1400"
+    ],
+    "timestamp": "Mar/09/2019 23:19"
+  },
   "CF51142661": {
     "contest_id": 88,
     "language": "GNU C++17",
