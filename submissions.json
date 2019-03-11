@@ -89,6 +89,27 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF51145857": {
+    "contest_id": 766,
+    "language": "GNU C++17",
+    "path": "codeforces\\766\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Mahmoud and a Triangle",
+    "problem_url": "https://codeforces.com/contest/766/problem/B",
+    "submission_id": "CF51145857",
+    "submission_url": "https://codeforces.com/contest/766/submission/51145857",
+    "tags": [
+      "constructive algorithms",
+      "geometry",
+      "greedy",
+      "math",
+      "number theory",
+      "sortings",
+      "*1000"
+    ],
+    "timestamp": "Mar/11/2019 02:11"
+  },
   "CF51146626": {
     "contest_id": 796,
     "language": "GNU C++17",
