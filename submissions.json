@@ -89,6 +89,24 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF52512979": {
+    "contest_id": 764,
+    "language": "GNU C++17",
+    "path": "codeforces\\764\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Taymyr is calling you",
+    "problem_url": "https://codeforces.com/contest/764/problem/A",
+    "submission_id": "CF52512979",
+    "submission_url": "https://codeforces.com/contest/764/submission/52512979",
+    "tags": [
+      "brute force",
+      "implementation",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Apr/09/2019 03:52"
+  },
   "CF52574333": {
     "contest_id": 812,
     "language": "GNU C++17",
