@@ -52,7 +52,7 @@
                 for(int k=0;k<n;k++){
                        w  = pow(x[k].first.first - i ,2);
                        l  = pow(x[k].first.second - j,2);
-                   if(((w+l))<=x[k].second*x[k].second){
+                   if((sqrt(w+l))<=x[k].second){
                     p++;
                     break;
                    }
