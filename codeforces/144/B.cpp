@@ -50,8 +50,8 @@
                 }
                 int w,l;
                 for(int k=0;k<n;k++){
-                       w  = ((x[k].first.first - i) * (x[k].first.first - i));
-                       l  = ((x[k].first.second - j)*(x[k].first.second - j));
+                       w  = pow(x[k].first.first - i ,2);
+                       l  = pow(x[k].first.second - j,2);
                    if(((w+l))<=x[k].second*x[k].second){
                     p++;
                     break;
