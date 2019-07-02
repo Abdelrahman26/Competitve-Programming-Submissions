@@ -89,6 +89,22 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF56433741": {
+    "contest_id": 617,
+    "language": "GNU C++17",
+    "path": "codeforces\\617\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Chocolate",
+    "problem_url": "https://codeforces.com/contest/617/problem/B",
+    "submission_id": "CF56433741",
+    "submission_url": "https://codeforces.com/contest/617/submission/56433741",
+    "tags": [
+      "combinatorics",
+      "*1300"
+    ],
+    "timestamp": "Jul/02/2019 15:12"
+  },
   "CF56675268": {
     "contest_id": 1189,
     "language": "GNU C++17",
