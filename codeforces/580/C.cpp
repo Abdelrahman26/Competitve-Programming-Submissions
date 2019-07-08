@@ -2,7 +2,7 @@
     using namespace std;
     #define loop(n)  for(int i=0;i<n;i++)
     #define endl '\n'
-    #define MAXNODES 100000+9
+    #define MAXNODES 1000000+9
     typedef long long ll;
     typedef vector<int> vi;
     typedef vector<pair<int,int> >vp;
