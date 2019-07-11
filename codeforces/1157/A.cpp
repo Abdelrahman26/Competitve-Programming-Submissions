@@ -27,18 +27,14 @@ bool visited[MAXNODES];
         cin.tie(0);
         cin.sync_with_stdio(0);
         cout.tie(0);
-        int n;
+        string n;
         cin>>n;
-        set<int>s;
-        while(true)
+        int e = n.size();
+        for(int i=1;i<n.size();i++)
         {
-            if(s.find(n)==s.end())
-                {
-            s.insert(n);
-            n++;
-            while(n%10==0)n/=10;
-            }
-            else break;
+            ans += 9 - (int)(n[i] - '0') ;
         }
-         cout<<s.size();
+         ans +=9;
+         if(n.size()>1)ans++;
+         cout<<ans;
     }
