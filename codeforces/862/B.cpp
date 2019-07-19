@@ -56,7 +56,13 @@ strcpy(char_array, s.c_str());
         }
         l.insert(1);
         dfs(1,2);
-        ll total = (ll)l.size() * r.size();
-        ans      = total - n + 1;
+        auto pos = l.find(1);
+        for(auto it = pos;it!=l.end();it++)
+        {
+            int st = *it;
+            int len = g[st].size();
+            ans     += r.size() - len;
+        }
         cout<<ans;
+
     }
