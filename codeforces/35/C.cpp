@@ -5,9 +5,8 @@
     #define MAXNODES 100000+9
     #define PB push_back
     #define MP make_pair
-    #define OnlineJudge
-    #define F first
-    #define S second
+    #define write_to_file() freopen("output.txt" , "w" , stdout)
+    #define read_from_file() freopen("input.txt" , "r" , stdin)
     typedef long long ll;
     typedef vector<int> vi;
     typedef vector<pair<int,int> >vp;
@@ -25,60 +24,58 @@ string itos(t i){
 stoi()
 strcpy(char_array, s.c_str());
  */
- void init(){
-    cin.tie(0);
-    cin.sync_with_stdio(0);
-    cout.tie(0);
-#ifdef OnlineJudge
-    freopen("input.txt","r",stdin);
-    freopen("output.txt","w",stdout);
-#endif
-}
-int dx[] = {1,-1,0,0};
-int dy[] = {0,0,1,-1};
-const int N  = 2e3 + 9;
-int n,m,k,x,y,ansx = 1,ansy = 1;
-bool Valid(int x,int y)
-{
-    return(x>0&&y>0&&x<=n&&y<=m);
-}
-int visited[N][N];
-queue<pair<int,int > >q;
-void BFS()
-{
-    int depth = 1,sz = q.size();
-    for(;q.size();++depth ,sz = q.size())
-    {
-        while(sz--)
-        {
-            int x = q.front().F;
-            int y = q.front().S;
-            q.pop();
-            for(int i =0;i<4;i++)
-            {
-                int nx = x + dx[i];
-                int ny = y + dy[i];
-                if(Valid(nx,ny)&&!visited[nx][ny]){
-                    q.push({nx,ny});
-                    visited[nx][ny] = 1;
-                    ansx = nx;
-                    ansy = ny;
-                }
-            }
-        }
-    }
-}
+ int  d  [2009][2009]={};
+ int arr [2009][2009]={};
+ int n,m;
+ void bfs(int x,int y,int number)
+ {
+      queue<pair<int,pair<int,int > > >q;
+      q.push({number,{x,y}});
+      d[x][y] = 1;
+       while(q.size())
+       {
+           int nodeX = q.front().second.first;
+           int nodeY = q.front().second.second;
+           int depth = q.front().first;
+           q.pop();
+           if(arr[nodeX][nodeY]) arr[nodeX][nodeY] =min(arr[nodeX][nodeY],depth);
+           else arr[nodeX][nodeY] = depth;
+               if(nodeX+1<n && !d[nodeX+1][nodeY] )
+                q.push({depth+1,{nodeX+1,nodeY}}),d[nodeX+1][nodeY] = 1;
+                if(nodeX-1>0&&!d[nodeX-1][nodeY])
+                    q.push({depth+1,{nodeX-1,nodeY}}),d[nodeX-1][nodeY] = 1;
+                if(nodeY+1<m&&!d[nodeX][nodeY+1])
+                    q.push({depth+1,{nodeX,nodeY+1}}),d[nodeX][nodeY+1] = 1;
+                    if(nodeY-1>0&& !d[nodeX][nodeY-1])
+                 q.push({depth+1,{nodeX,nodeY - 1}}),d[nodeX][nodeY-1] = 1;
+       }
+ }
     int main()
     {
-        init();
-        cin>>n>>m>>k;
+        cin.tie(0);
+        cin.sync_with_stdio(0);
+        cout.tie(0);
+         read_from_file();
+        write_to_file();
+        cin>>n>>m;
+        n++,m++;
+        int u,v,k,mn = -1,l,r;
+        cin>>k;
         loop(k)
         {
-            cin>>x>>y;
-            q.push({x,y});
-            visited[x][y] = 1;
+            cin>>u>>v;
+            bfs(u,v,1);
+            loop(n+1)
+            for(int j=0;j<m+1;j++)d[i][j] = 0;
         }
-        BFS();
-        cout<<ansx<<" "<<ansy;
+        for(int i=1;i<=n;i++)
+            for(int j=1;j<=m;j++){
+              if(arr[i][j] > mn){
+                    mn = arr[i][j];
+              l = i, r=j;
+            }
+            }
+            cout<<l<<" "<<r;
+
 
     }
