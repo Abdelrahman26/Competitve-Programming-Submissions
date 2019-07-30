@@ -89,6 +89,23 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF58043949": {
+    "contest_id": 877,
+    "language": "GNU C++17",
+    "path": "codeforces\\877\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Nikita and string",
+    "problem_url": "https://codeforces.com/contest/877/problem/B",
+    "submission_id": "CF58043949",
+    "submission_url": "https://codeforces.com/contest/877/submission/58043949",
+    "tags": [
+      "brute force",
+      "dp",
+      "*1500"
+    ],
+    "timestamp": "Jul/30/2019 23:26"
+  },
   "CF58098054": {
     "contest_id": 276,
     "language": "GNU C++17",
