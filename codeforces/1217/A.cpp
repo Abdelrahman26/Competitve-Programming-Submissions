@@ -80,17 +80,6 @@
     }
    const int N  = 1e5+6;
    bool flag,ok;
-   int a,b,c;
-   int bs(int s,int e)
-   {
-       while(s < e)
-       {
-           int mid = (s + e) / 2;
-           if(a + mid > b + c - mid)e = mid;
-           else s = mid + 1;
-       }
-       return  c - s + 1;
-   }
    int main()
     {
         init();
@@ -98,8 +87,21 @@
        cin>>t;
        while(t--)
        {
+           int a,b,c;
            cin>>a>>b>>c;
-           if(a + c <= b)cout<<0<<endl;
-           else cout<<min(bs(0,c),c+1)<<endl;
+           if(c==0)
+           {
+               if(a>b) cout<<1;
+               else cout<<0;
+               cout<<endl;
+               continue;
+           }
+           if(a+c <= b)
+           {
+               cout<<0<<endl;
+               continue;
+           }
+            cout<<min((a + c - b + 1)  / 2 , c+1) ;
+            cout<<endl;
        }
     }
