@@ -89,6 +89,24 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF60419070": {
+    "contest_id": 1105,
+    "language": "GNU C++17",
+    "path": "codeforces\\1105\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Zuhair and Strings",
+    "problem_url": "https://codeforces.com/contest/1105/problem/B",
+    "submission_id": "CF60419070",
+    "submission_url": "https://codeforces.com/contest/1105/submission/60419070",
+    "tags": [
+      "brute force",
+      "implementation",
+      "strings",
+      "*1100"
+    ],
+    "timestamp": "Sep/12/2019 06:44"
+  },
   "CF60457675": {
     "contest_id": 1006,
     "language": "GNU C++17",
