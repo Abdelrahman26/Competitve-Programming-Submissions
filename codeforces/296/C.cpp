@@ -14,82 +14,130 @@
 #include <stack>
 #include <queue>
 #include <deque>
-#include <stdio.h>
-//#define int long long
 using namespace std;
+#define loop(n)  for(int i=0;i<n;i++)
 #define loop(n) for(int i=0;i<n;i++)
 #define endl '\n'
-#define OnlineJudgeg
+#define MAXNODES 100000+9
+#define PB push_back
+#define MP make_pair
+#define OnlineJudgex
 #define F first
 #define S second
-#define  precision(n)  cout << fixed << setprecision(n)
+#define EPS 1e-9
+#define PI acos(-1.0)
+#define  precision(n)        cout << fixed << setprecision(n)
 #define clr(v,d ) memset(v, d, sizeof(v))
+#define MOD (int)1e9 + 7
 typedef long long ll;
 typedef vector<int> vi;
-typedef pair<int,int> pii;
-typedef pair<int,pii> pnii; /// weighted grid
-typedef vector<pii>vii;
+typedef vector<pair<int,int> >vp;
+using namespace std;
+/*
+string itos(t i){
+ stringstream s;
+ s << i;
+ return s.str();
+}
+stoi()
+strcpy(char_array, s.c_str());
+ */
 void init()
 {
     cin.tie(0);
     cin.sync_with_stdio(0);
     cout.tie(0);
-    #ifdef OnlineJudge
+#ifdef OnlineJudge
     freopen("input.txt","r",stdin);
     freopen("output.txt","w",stdout);
-    #endif
+#endif
 }
-ll S(ll x){ll s = 0;while(x){s += x % 10;x /= 10;}return s;} /// sum of digits.
-ll powe(ll a , ll n){if(n == 1)return a;return a * powe(a ,n-1);}
-ll com(int n,int m){ll z = 1;for(int i = 0; i < m;i++){z = z * ( n - i) / (i + 1) ;}return z;}
-int fix (int a,int k){ return (a%k + k)%k; } // convert N mod to P mode
-int * LIS_Lengths(vector<int> a) { int* lis = new int[a.size()];int b[a.size()];int maxLength = 1, lowerBound;lis[0] = 1, b[0] = a[0];for (size_t i = 1; i < a.size(); i++) {lowerBound = lower_bound(b, b + maxLength, a[i]) - b;
-lis[i] = lowerBound + 1;if (lowerBound == maxLength)    b[maxLength++] = a[i];else    b[lowerBound] = a[i];}return lis;}
-bool is_prime(ll n){if(n==2) return true;if(n<2 || n%2 == 0)return false;for(int i=3; i * i <= n; i+=2){if(n % i == 0)return false;}return true;}
-ll LCM(ll a, ll b){return (a * b)/__gcd(a,b);}
+struct point
+{
+    double x, y;
+    point()
+    {
+        x = y = 0.0;
+    }
+    point(double _x, double _y) : x(_x), y(_y) {}
+    bool operator < (point other) const
+    {
+        if ((fabs(x - other.x) > EPS))
+            return x < other.x;
+        return y < other.y;
+    }
+    bool operator == (point other) const
+    {
+        return fabs(x-other.x) < EPS && fabs(y-other.y) < EPS;
+    }
+    point operator + (const point & p) const
+    {
+        return point(x + p.x, y + p.y);
+    }
+    point operator - (const point & p) const
+    {
+        return point(x - p.x, y - p.y);
+    }
+    double dot(const point & p) const
+    {
+        return x * p.x + y * p.y;
+    }
+    double cross(const point & p) const
+    {
+        return x * p.y - y * p.x;
+    }
+};
 int dx[] = {1,-1,0,0};
 int dy[] = {0,0,1,-1};
-int dr[] = {0,0,0,1,1,1,-1,-1,-1};
-int dc[] ={-1,0,1,-1,0,1,-1,0,1};
-/// <<------------------------------------------------------------------------------>>
-ll arr[100006];
-ll que[100006];
-ll rst[100006];
-/// <<----;------------------------------------------------------------------------->>
+double dist(point p1, point p2)
+{
+    return hypot(p1.x - p2.x, p1.y - p2.y);
+}
+bool preceed(int x,int y)
+{
+    return x > y;
+}
+int dcmp(double a,double b)
+{
+    if ( fabs(a-b)  <= EPS )
+        return  0 ;
+    return 1;
+}
+const int N  = 1e5+9;
+bool flag,ok;
+ ll x[N + 1] ;
+ ll y[N + 1] ;
+ pair<pair<ll, ll> ,ll>arr[N + 1];
+ ll z [N+1];
 int main()
 {
     init();
-    ll n ,m ,q;
-    cin >> n >> m >> q;
-    loop(n) cin >> arr[i+1];
-    vector<pair<pair<int , int> , ll > >v(m+1);
-    for(int i = 1 ;i <= m;i++)
+    int n,m,k;
+    cin>>n>>m>>k;
+    loop(n)cin>>x[i + 1];
+    loop(m)
     {
-        int l ,r,k;
-        cin >> l >> r >> k;
-        v[i] = {{l,r},k};
+        ll l ,r ,d;
+        cin>>l>>r>>d;
+        arr[i + 1] = {{l,r},d};
     }
-    loop(q)
+    loop(k)
     {
-        int l , r;
-        cin >> l >> r;
-        que[l]++;
-        que[r+1]--;
+        ll l,r;
+        cin>>l>>r;
+        y[l]++ , y[r+1]--;
     }
-    partial_sum(que,que+m+1,que);/// m operations
-    for(int i = 1 ;i <= m ;i++)
+    for(int i = 1; i<= m ;i ++) y[i] += y [i-1];
+    for(int i = 1; i<= m ;i++)
     {
-        int l = v[i].F.F;
-        int r = v[i].F.S;
-        ll k  = v[i].S;
-        rst[l] += k*que[i];
-        rst[r+1]-= k*que[i];
+        ll st = y[i] * arr[i].S;
+        ll l = arr[i].F.F;
+        ll r = arr[i].F.S;
+        z[l]+= st;
+        z[r+1]-= st;
     }
-    partial_sum(rst,rst+n+1,rst);
-    for(int i = 1 ;i <= n ;i++)
-    {
-        arr[i] += rst[i];
-        cout<<arr[i]<<" ";
-    }
-
+    for(int i = 1;  i<= n ;i ++) z[i] += z [i-1];
+    for(int i = 1; i <= n ;i ++)cout<<x[i] + z[i]<<" ";
 }
+
+
