@@ -43,27 +43,81 @@ int dy[] = {0,0,1,-1};
 int main()
 {
     init();
-      int t;
-	cin >> t;
-	while(t--){
-		int a, b, p;
-		cin >> a >> b >> p;
-		string s;
-		cin >> s;
-		ll ans = 0;
-		int n  = s.size();
-		int i  = n - 2 , j = n , idx = 1 + n;
-		while(i >= 0)
+    int t;
+    cin >> t;
+    vector<int>v;
+    while(t--)
+    {
+        int a , b , cost;
+        cin >> a >> b >> cost;
+            string x;
+        cin >> x;
+        ll ans = 0;
+        int n = x.size();
+        x +="F";
+        char R = x[0];
+        int i = 1;
+        while(i < n)
         {
-            j = i;
-            while(j >= 0 && s[i] == s[j])j--;
-            ans += s[i] == 'A' ? a : b;
-            if(ans <= p)
+            if(x[i] == R)
             {
-                idx  = j + 1;
+               i++;
             }
-            i = j;
+            else
+            {
+                if(R == 'A')
+                {
+                    ans += a;
+                }
+                else
+                {
+                    ans += b;
+                }
+                R = x[i];
+                i++;
+            }
+            if(i == n)
+            {
+                 if(x[n-1] == x[n-2])
+                {
+                    if(x[n-1] == 'A')ans += a;
+                    else ans+= b;
+                }
+            }
+
+
         }
-        cout<<min(++idx,n)<<endl;
-	}
+        ll arr[n] ={0};
+        R = 'F';
+        arr[0] = ans;
+        for(int i = 1 ; i < n ;i++)
+        {
+            if(x[i] == x[i-1])
+                arr[i] = ans;
+            else
+            {
+                arr[i] = ans;
+                if(x[i - 1] == 'A')ans -=a;
+                else ans -= b;
+            }
+        }
+        bool ok = 0;
+        loop(n)
+        {
+            if(arr[i] <= cost)
+            {
+                if(i == 0)
+                {
+                    cout<<1<<endl ;
+                    ok = 1;
+                    break;
+                 }
+
+                cout<<i<<endl;
+                ok = 1;
+                break;
+            }
+        }
+      if(!ok)cout<<n<<endl;
+    }
 }
