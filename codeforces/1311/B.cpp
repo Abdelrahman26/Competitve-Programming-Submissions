@@ -58,14 +58,15 @@ int main()
             cin >> x;
             p[--x] = 1;
         }
+        int y[n];
+        loop(n)y[i] = arr[i];
+        sort(y,y+n);
         for(int i = 0 ; i < n ;i++)
         {
-            for(int j = 0 ; j < n ; j++)
+            for(int j = 0 ; j < n - 1 ; j++)
             {
-                if(arr[j + 1] < arr[j])
-                {
-                    if(p[j])swap(arr[j] , arr[j+1]);
-                }
+                   if(arr[j+1] < arr[j] && p[j])
+                     swap(arr[j+1],arr[j]);
             }
         }
         bool ok = 0;
