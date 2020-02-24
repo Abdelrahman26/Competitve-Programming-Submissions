@@ -89,6 +89,24 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF71774792": {
+    "contest_id": 1311,
+    "language": "GNU C++17",
+    "path": "codeforces\\1311\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Add Odd or Subtract Even",
+    "problem_url": "https://codeforces.com/contest/1311/problem/A",
+    "submission_id": "CF71774792",
+    "submission_url": "https://codeforces.com/contest/1311/submission/71774792",
+    "tags": [
+      "greedy",
+      "implementation",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Feb/24/2020 16:44"
+  },
   "CF71806466": {
     "contest_id": 1311,
     "language": "GNU C++17",
