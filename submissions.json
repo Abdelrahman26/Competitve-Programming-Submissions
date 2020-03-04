@@ -89,6 +89,22 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF72428435": {
+    "contest_id": 1316,
+    "language": "GNU C++17",
+    "path": "codeforces\\1316\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Grade Allocation",
+    "problem_url": "https://codeforces.com/contest/1316/problem/A",
+    "submission_id": "CF72428435",
+    "submission_url": "https://codeforces.com/contest/1316/submission/72428435",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Mar/04/2020 16:45"
+  },
   "CF72460616": {
     "contest_id": 1316,
     "language": "GNU C++17",
