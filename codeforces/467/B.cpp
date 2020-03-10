@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+//#include <bits/stdc++.h>
 #include <algorithm>
 #include <iostream>
 #include <iomanip>
@@ -52,8 +52,21 @@ int main()
     int x , ans = 0; cin >> x;
     loop(m)
     {
-        if(__builtin_popcount(x ^ arr[i]) <= k)/// NO.ones
-          ans++;
+        bool ok = 0;
+        int cnt = 0;
+        for(int j = 0 ; j < n ;j++)
+        {
+            int jj = arr[i] >> j;
+            int kk = x >> j;
+            if(jj % 2 != kk % 2)
+               cnt++;
+            if(cnt > k)
+            {
+                ok = 1;
+                break;
+            }
+        }
+        if (!ok) ans++;
     }
     cout<<ans;
 }
