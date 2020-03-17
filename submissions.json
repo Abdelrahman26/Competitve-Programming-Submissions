@@ -89,6 +89,23 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF73526876": {
+    "contest_id": 34,
+    "language": "GNU C++17",
+    "path": "codeforces\\34\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Sale",
+    "problem_url": "https://codeforces.com/contest/34/problem/B",
+    "submission_id": "CF73526876",
+    "submission_url": "https://codeforces.com/contest/34/submission/73526876",
+    "tags": [
+      "greedy",
+      "sortings",
+      "*900"
+    ],
+    "timestamp": "Mar/17/2020 23:58"
+  },
   "CF73529602": {
     "contest_id": 270,
     "language": "GNU C++17",
