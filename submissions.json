@@ -89,6 +89,24 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF73529602": {
+    "contest_id": 270,
+    "language": "GNU C++17",
+    "path": "codeforces\\270\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Fancy Fence",
+    "problem_url": "https://codeforces.com/contest/270/problem/A",
+    "submission_id": "CF73529602",
+    "submission_url": "https://codeforces.com/contest/270/submission/73529602",
+    "tags": [
+      "geometry",
+      "implementation",
+      "math",
+      "*1100"
+    ],
+    "timestamp": "Mar/18/2020 01:37"
+  },
   "CF73530263": {
     "contest_id": 124,
     "language": "GNU C++17",
