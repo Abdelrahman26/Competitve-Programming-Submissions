@@ -48,12 +48,24 @@ int main()
     int l = n + n + 1;
     int gh = n;
     int m = 0;
-    for(int i = -n ; i <= n; i++)
+    for(int i = 0 ; i <= n; i++)
     {
-        gh = n - abs(i);
-        for(int j = 0 ; j < abs(i) ;j++)cout<<"  ";
-        for(int k = 0 ; k < gh ; k++)cout<<k<<" ";
-        for(int k = gh; k > 0 ; k--)cout<<k<<" ";
+        for(int j = 0 ; j < gh ;j++)cout<<"  ";
+        for(int k = 0 ; k < m ; k++)cout<<k<<" ";
+        for(int k = m; k > 0 ; k--)cout<<k<<" ";
         cout<<0<<endl;
+        gh--;
+        m++;
+    }
+    gh = 1;
+    m  = n;
+    for(int i = n + 1 ; i < l ;i++)
+    {
+        for(int j = 0 ; j < gh ; j++)cout<<"  ";
+        for(int k = 0 ; k < m && m != 1;k++)cout<<k<<" ";
+        for(int k = m-2 ; k > 0 ;k--)cout<<k<<" ";
+        cout<<0<<endl;
+        gh++;
+        m--;
     }
 }
