@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+//#include <bits/stdc++.h>
 #include <algorithm>
 #include <iostream>
 #include <iomanip>
@@ -15,9 +15,8 @@
 #include <queue>
 #include <deque>
 #include <stdio.h>
-#define int long long
 using namespace std;
-//#define loop(n) for(int i=0;i<n;i++)
+#define loop(n) for(int i=0;i<n;i++)
 #define endl '\n'
 #define OnlineJudgec
 #define F first
@@ -47,7 +46,7 @@ int dc[] ={-1,0,1,-1,0,1,-1,0,1};
 
 
 /// <<------------------------------------------------------------------------------>>
-signed main()
+int main()
 {
     init();
     int t;
@@ -56,39 +55,62 @@ signed main()
     {
         int n;
         cin >> n;
-        int  arr[n+1] = {0}, total = 0;
+        int arr[n];
+        loop(n)cin >> arr[i];
+        set<int>st;
+        int j = 0;
         for(int i = 0 ;i < n;i++)
         {
-            cin >>arr[i+1];
-            total += arr[i+1];
+            if(st.empty() || (!st.empty() && st.find(arr[i]) == st.end()))
+                st.insert(arr[i]);
+            else
+            {
+                j = i;
+                break;
+            }
         }
-        int suf[n+2] = {0}, pre[n+1] = {0};
-        map<int,int>p ,s;
-        for(int i = 1 ; i <= n ;i++)
+        vector<pair<int,int> >cnt;
+        set<int>rem;
+        for(int i = j ; i < n ;i++)
         {
-            pre[i] += pre[i-1];
-            if(p[arr[i]]==0)
-                pre[i]++;
-            p[arr[i]] = 1;
+             if(rem.empty())rem.insert(arr[i]);
+             else if(!rem.empty() && rem.find(arr[i]) == rem.end())
+                rem.insert(arr[i]);
+            else break;
         }
-        for(int i = n; i >= 1 ;i--)
+        int A = 0 ,B = 0 , C = 0 ,D = 0 , ans = 0;
+        if(st.size() == *st.rbegin()) A = st.size();
+        if(rem.size()== *rem.rbegin())B= rem.size();
+        if(A + B == n)
         {
-            suf[i] += suf[i+1];
-            if(s[arr[i]]== 0)
-                suf[i]++;
-            s[arr[i]] = 1;
+            ans++;
+            cnt.push_back({A,B});
         }
-        vector<pair<int,int> >ans;
-        int sum = 0;
-        for(int l1 = 1 ;l1 < n ;l1++)
+        st.clear();rem.clear();
+        j = 0;
+        for(int i = n -1 ;i >= 0 ;i--)
         {
-            sum += arr[l1];
-            if(pre[l1] == l1 && l1 * (l1 + 1) / 2 == sum &&
-               suf[l1 + 1] == (n - l1) && (n - l1)*(n - l1+1) / 2 == total - sum)
-                    ans.push_back({l1,n-l1});
+            if(st.empty() || (!st.empty() && st.find(arr[i]) == st.end()))st.insert(arr[i]);
+            else
+            {
+                j = i;
+                break;
+            }
         }
-        cout<< (ans.size()) <<endl;
-        for(int i = 0 ;i < ans.size() ;i++)
-          cout<<ans[i].F<<" "<<ans[i].S<<endl;
+        for(int i = j ; i>= 0 ;i--)rem.insert(arr[i]);
+        if(st.size() == *st.rbegin())C = st.size();
+        if(rem.size()== *rem.rbegin())D= rem.size();
+        if(C + D == n)
+        {
+            if(C != B)
+            {
+                    ans++;
+                    cnt.push_back({D,C});
+            }
+        }
+        cout<<ans<<endl;
+        loop(ans)
+          cout<<cnt[i].F<<" "<<cnt[i].S<<endl;
     }
+
 }
