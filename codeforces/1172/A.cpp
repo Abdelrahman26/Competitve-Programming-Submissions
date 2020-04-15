@@ -115,5 +115,5 @@ int main()
        cnt++;
     }
     cnt += n - srch + 1;
-    cout<<min(cnt,rem );
+    cout<<min(cnt,rem);
 }
