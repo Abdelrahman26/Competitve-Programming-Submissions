@@ -46,34 +46,38 @@ int dr[] = {0,0,0,1,1,1,-1,-1,-1};
 int dc[] ={-1,0,1,-1,0,1,-1,0,1};
 /// <<------------------------------------------------------------------------------>>
 const int N = 1e5+9;
-
+int n;
+int x[N] , h[N];
+int dp[N][2];
+int solve(int i , int st, int mn)
+{
+    if(i == n)
+        return 0;
+    int &rst = dp[i][st];
+    if(~rst) return rst;
+    int ch1 = 0 , ch2 = 0, ch3 = 0 ;
+    if(x[i] - h[i] > mn)
+    {
+        ch1 = 1 + solve(i+1,0,x[i]);
+    }
+    if(x[i] + h[i] < x[i+1])
+    {
+        ch2 = 1 + solve(i+1,1,x[i] + h[i]);
+    }
+    ch3 = solve(i+1,0,x[i]);
+    return rst = max(ch1,max(ch2,ch3));
+}
 /// <<------------------------------------------------------------------------------>>
 int main()
 {
     init();
- int n;
     cin >> n;
-    int x[n] , h[n];
+    clr(dp,-1);
     loop(n)
     {
-        cin >> x[i]>>h[i];
+        cin >> x[i] >> h[i];
     }
-    if(n==1)return cout<<1,0;
-    int mn = x[0] , cnt = 2;
-    for(int i = 1 ;i < n - 1 ;i++)
-    {
-        if(x[i] - h[i] > mn)
-        {
-            cnt++;
-            mn = x[i];
-        }
-        else if(x[i] + h[i] < x[i+1])
-        {
-            cnt++;
-            mn = x[i] + h[i];
-        }
-        else mn = x[i];
-    }
-    cout<<cnt<<endl;
+    x[n] = 2e9+5;
+    int a = solve(0,0,-2e9);
+    cout<<a;
 }
-
