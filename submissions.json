@@ -89,6 +89,23 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF77230458": {
+    "contest_id": 115,
+    "language": "GNU C++17",
+    "path": "codeforces\\115\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Lawnmower",
+    "problem_url": "https://codeforces.com/contest/115/problem/B",
+    "submission_id": "CF77230458",
+    "submission_url": "https://codeforces.com/contest/115/submission/77230458",
+    "tags": [
+      "greedy",
+      "sortings",
+      "*1500"
+    ],
+    "timestamp": "Apr/19/2020 02:37"
+  },
   "CF77406353": {
     "contest_id": 455,
     "language": "GNU C++17",
