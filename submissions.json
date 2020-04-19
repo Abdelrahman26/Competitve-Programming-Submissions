@@ -1,4 +1,20 @@
 {
+  "AC12153918": {
+    "contest_id": "abc061",
+    "language": "C++14 (GCC 5.4.1)",
+    "path": "atcoder\\abc061\\C.cpp",
+    "platform": "AtCoder",
+    "problem_index": "C",
+    "problem_name": "Big Array",
+    "problem_url": "https://atcoder.jp/contests/abc061/tasks/abc061_c",
+    "submission_id": "AC12153918",
+    "submission_url": "https://atcoder.jp/contests/abc061/submissions/12153918",
+    "tags": [
+      "AtCoder",
+      "*300"
+    ],
+    "timestamp": "Apr/19/2020 21:11"
+  },
   "AC12153941": {
     "contest_id": "abc061",
     "language": "C++14 (GCC 5.4.1)",
