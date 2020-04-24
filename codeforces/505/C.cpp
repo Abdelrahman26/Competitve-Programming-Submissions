@@ -44,14 +44,15 @@ int dy[] = {0,0,1,-1};
 int dr[] = {0,0,0,1,1,1,-1,-1,-1};
 int dc[] ={-1,0,1,-1,0,1,-1,0,1};
 /// <<------------------------------------------------------------------------------>>
-int n,d  ,mx;
+int n,d;
 int arr[30007];
-int dp [30107][505];
+int dp [30007][505];
 int solve(int i , int lst)
 {
-    if(i > 30001 )
+    if(i > 30001)
         return 0;
-    int &rst = dp[i][lst];
+    int pos  = lst - (d - 250);
+    int &rst = dp[i][pos];
     if(~rst)
         return rst;
     rst = 0;
