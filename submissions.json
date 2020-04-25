@@ -89,6 +89,23 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF77973610": {
+    "contest_id": 1057,
+    "language": "GNU C++17",
+    "path": "codeforces\\1057\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Tanya and Colored Candies",
+    "problem_url": "https://codeforces.com/contest/1057/problem/C",
+    "submission_id": "CF77973610",
+    "submission_url": "https://codeforces.com/contest/1057/submission/77973610",
+    "tags": [
+      "*special problem",
+      "dp",
+      "*2000"
+    ],
+    "timestamp": "Apr/25/2020 06:14"
+  },
   "CF77990611": {
     "contest_id": 265,
     "language": "GNU C++17",
