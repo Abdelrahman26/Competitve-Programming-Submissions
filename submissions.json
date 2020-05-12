@@ -89,6 +89,24 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF79815309": {
+    "contest_id": 1181,
+    "language": "GNU C++17",
+    "path": "codeforces\\1181\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Split a Number",
+    "problem_url": "https://codeforces.com/contest/1181/problem/B",
+    "submission_id": "CF79815309",
+    "submission_url": "https://codeforces.com/contest/1181/submission/79815309",
+    "tags": [
+      "greedy",
+      "implementation",
+      "strings",
+      "*1500"
+    ],
+    "timestamp": "May/12/2020 14:21"
+  },
   "CF79831821": {
     "contest_id": 1350,
     "language": "GNU C++17",
