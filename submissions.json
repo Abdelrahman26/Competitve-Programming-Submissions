@@ -89,6 +89,24 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF80864837": {
+    "contest_id": 798,
+    "language": "GNU C++17",
+    "path": "codeforces\\798\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Mike and strings",
+    "problem_url": "https://codeforces.com/contest/798/problem/B",
+    "submission_id": "CF80864837",
+    "submission_url": "https://codeforces.com/contest/798/submission/80864837",
+    "tags": [
+      "brute force",
+      "dp",
+      "strings",
+      "*1300"
+    ],
+    "timestamp": "May/21/2020 17:05"
+  },
   "CF80869298": {
     "contest_id": 604,
     "language": "GNU C++17",
