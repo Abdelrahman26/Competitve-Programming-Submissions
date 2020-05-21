@@ -52,7 +52,8 @@ int dy[] = {0,0,1,-1};
 int dr[] = {0,0,0,1,1,1,-1,-1,-1};
 int dc[] ={-1,0,1,-1,0,1,-1,0,1};
 /// <<------------------------------------------------------------------------------>>
-int ans = 1e6;
+
+int rst = 2e7;
 /// <<----;------------------------------------------------------------------------->>
 int main()
 {
@@ -60,30 +61,57 @@ int main()
     int n;
     cin >> n;
     vector<string>v;
+    int cnt = 0 ,ans = 0;
     loop(n)
     {
         string x; cin >> x;
         v.push_back(x);
     }
     int sz = v[0].size();
-    string stand = v[0];
-    for(int i = 0 ;i < sz ;i++)/// ith rotate for stand str
+    string stand = "";
+    for(int i = 0 ;i < n;i++)
     {
-        int rst = i;/// dynamic rotate for stand.
-        for(int j = 1 ;j < n;j++)
+        stand = v[i];/// fixed
+        int ans2 = 0;
+        for(int j = 0 ;j < n ;j++)
         {
-            int cnt = 0;
-            string temp = v[j];
-            while(temp != stand && cnt < sz)
+            bool ok = 0;cnt = 1e7;
+            if(i == j)continue;
+            for(int k = 0 ; k < sz ;k++)/// starting point
             {
-                cnt++;
-                rotate(temp.begin(),temp.begin()+1,temp.end());
+                ans = 1e7;
+                int m = 0;
+                for(int p = k ; p < sz ;p++)
+                {
+                    char a = stand[m] , b = v[j][p];
+                    if(stand[m++] != v[j][p])
+                    {
+                        string A = stand.substr(m-1);
+                        string B = v[j].substr(p);
+                               B+= v[j].substr(0,k);
+                        if(A == B)
+                        {
+                            ok = 1;
+                            cnt= min(cnt,int(B.size()));
+                        }
+                        break;
+                    }
+                    else if(p == sz - 1)
+                    {
+                        string A = stand.substr(m-1);
+                        string B = v[j].substr(p);
+                        B+= v[j].substr(0,k);
+                        if(A == B) ok = 1,
+                        cnt = min(cnt,k);
+                    }
+                }
+
+              ans = min(ans,cnt);
             }
-            if(cnt == sz)return cout<<-1,0;
-            rst += cnt;
+            if(!ok)return cout<<-1,0;
+            ans2 += ans;
         }
-        ans = min(ans,rst);
-        rotate(stand.begin(),stand.begin()+1,stand.end());
+        rst = min(rst,ans2);
     }
-    cout<<ans<<endl;
+    cout<<rst<<endl;
 }
