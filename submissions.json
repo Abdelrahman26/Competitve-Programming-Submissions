@@ -89,6 +89,23 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF80869298": {
+    "contest_id": 604,
+    "language": "GNU C++17",
+    "path": "codeforces\\604\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "More Cowbell",
+    "problem_url": "https://codeforces.com/contest/604/problem/B",
+    "submission_id": "CF80869298",
+    "submission_url": "https://codeforces.com/contest/604/submission/80869298",
+    "tags": [
+      "binary search",
+      "greedy",
+      "*1400"
+    ],
+    "timestamp": "May/21/2020 17:57"
+  },
   "CF80884527": {
     "contest_id": 605,
     "language": "GNU C++17",
