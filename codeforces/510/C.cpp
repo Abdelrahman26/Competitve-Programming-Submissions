@@ -53,19 +53,20 @@ int dr[] = {0,0,0,1,1,1,-1,-1,-1};
 int dc[] ={-1,0,1,-1,0,1,-1,0,1};
 /// <<------------------------------------------------------------------------------>>
 map<char,int>parity;
-void check(string &a , string &b)
+bool check(string &a , string &b)
 {
     int n = a.size();
     int m = b.size();
     loop(min(n,m))
     {
-        if(parity[a[i]] < parity[b[i]]) return ;
+        if(parity[a[i]] < parity[b[i]]) return 1;
         else if(parity[a[i]] > parity[b[i]])
         {
             swap(parity[a[i]] , parity[b[i]]);
-            return ;
+            return 1;
         }
     }
+    return n <= m;
 }
 bool state(string &a , string &b)
 {
@@ -97,7 +98,12 @@ int main()
     {
         loop(n - 1)
         {
-            check(v[i] , v[i+1]);
+            bool gh = check(v[i] , v[i+1]);
+            if(!gh)
+            {
+                cout << "Impossible" << endl;
+                    return 0;
+            }
         }
     }
     loop(n-1)
