@@ -89,6 +89,25 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF83596970": {
+    "contest_id": 766,
+    "language": "GNU C++17",
+    "path": "codeforces\\766\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Mahmoud and a Message",
+    "problem_url": "https://codeforces.com/contest/766/problem/C",
+    "submission_id": "CF83596970",
+    "submission_url": "https://codeforces.com/contest/766/submission/83596970",
+    "tags": [
+      "brute force",
+      "dp",
+      "greedy",
+      "strings",
+      "*1700"
+    ],
+    "timestamp": "Jun/13/2020 11:35"
+  },
   "CF83769596": {
     "contest_id": 1364,
     "language": "GNU C++17",
