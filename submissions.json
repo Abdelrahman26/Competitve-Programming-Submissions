@@ -89,6 +89,25 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF83907647": {
+    "contest_id": 604,
+    "language": "GNU C++17",
+    "path": "codeforces\\604\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Alternative Thinking",
+    "problem_url": "https://codeforces.com/contest/604/problem/C",
+    "submission_id": "CF83907647",
+    "submission_url": "https://codeforces.com/contest/604/submission/83907647",
+    "tags": [
+      "constructive algorithms",
+      "dp",
+      "greedy",
+      "math",
+      "*1600"
+    ],
+    "timestamp": "Jun/16/2020 11:28"
+  },
   "CF83940562": {
     "contest_id": 1367,
     "language": "GNU C++17",
