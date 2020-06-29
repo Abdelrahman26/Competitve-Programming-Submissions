@@ -1,8 +1,11 @@
-n = int(input())
-l = [input() for i in range(n)]
-s = dict()
-a = {}
-for i in range(n-1,-1,-1):
-    if l[i]  not in s:
-        print(l[i])
-        s[l[i]] = 1
+import collections
+dq = collections.deque()
+n  = int(input())
+for i in range(n):
+    x = input()
+    dq.appendleft(x)
+mp = dict()
+for i in range(n):
+    if dq[i] not in mp.keys():
+        print(dq[i])
+        mp[dq[i]] = 1
