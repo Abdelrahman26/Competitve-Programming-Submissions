@@ -99,15 +99,11 @@ int main()
             z[i] += z[i - 1];
     }
     int sum = 2e9;
-    if(z.size() >= k) /// z is enough to form a full solution
+    if(z.size() >= k)
     {
         sum = z[k-1]  ;
     }
-    
-    int m  = min(x.size(),y.size()); /// z is empty
-    if(m >= k)
-        sum = min(sum,x[k-1] + y[k - 1]);
-    
+
     for(int i = 0 ;i < z.size() ;i++)
     {
        if( (k - i - 2) < x.size() && (k - i - 2 ) < y.size())
@@ -116,6 +112,8 @@ int main()
              sum = min(sum,r);
        }
     }
-
+    int m  = min(x.size(),y.size());
+    if(m >= k)
+        sum = min(sum,x[k-1] + y[k - 1]);
     cout << sum << endl;
 }
