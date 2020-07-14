@@ -89,6 +89,23 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF86871455": {
+    "contest_id": 620,
+    "language": "GNU C++14",
+    "path": "codeforces\\620\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Professor GukiZ's Robot",
+    "problem_url": "https://codeforces.com/contest/620/problem/A",
+    "submission_id": "CF86871455",
+    "submission_url": "https://codeforces.com/contest/620/submission/86871455",
+    "tags": [
+      "implementation",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Jul/15/2020 01:31"
+  },
   "CF86872154": {
     "contest_id": 620,
     "language": "GNU C++14",
