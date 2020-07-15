@@ -89,6 +89,22 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF86872154": {
+    "contest_id": 620,
+    "language": "GNU C++14",
+    "path": "codeforces\\620\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Grandfather Dovlet\u2019s calculator",
+    "problem_url": "https://codeforces.com/contest/620/problem/B",
+    "submission_id": "CF86872154",
+    "submission_url": "https://codeforces.com/contest/620/submission/86872154",
+    "tags": [
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Jul/15/2020 02:13"
+  },
   "CF86872722": {
     "contest_id": 620,
     "language": "GNU C++14",
