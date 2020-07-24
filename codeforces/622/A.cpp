@@ -62,10 +62,13 @@ int main()
     ll n;
     cin >> n;
     bool ok = 0;
-    for(int i = 1 ; ;i++)
+    for(ll m = 1 ; m < ll(1e8) ; m++)
     {
-        n -= i;
-        if(n <= 0)
-            return cout << n + i,0;
+        ll d = m*(m + 1) / 2;
+        if(d >= n)
+        {
+            cout << m - (d - n) << endl;
+            return 0;
+        }
     }
 }
