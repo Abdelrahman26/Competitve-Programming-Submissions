@@ -89,6 +89,23 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF87828071": {
+    "contest_id": 622,
+    "language": "GNU C++14",
+    "path": "codeforces\\622\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Infinite Sequence",
+    "problem_url": "https://codeforces.com/contest/622/problem/A",
+    "submission_id": "CF87828071",
+    "submission_url": "https://codeforces.com/contest/622/submission/87828071",
+    "tags": [
+      "implementation",
+      "math",
+      "*1000"
+    ],
+    "timestamp": "Jul/24/2020 07:22"
+  },
   "CF87829781": {
     "contest_id": 622,
     "language": "GNU C++14",

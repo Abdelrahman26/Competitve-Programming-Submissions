@@ -67,8 +67,21 @@ int main()
         ll d = m*(m + 1) / 2;
         if(d >= n)
         {
-            cout << m - (d - n) << endl;
-            return 0;
+            for(ll i = d ;i > 0 ; i--)
+            {
+                if(n == i)
+                {
+                    cout << m ;
+                    ok = 1;
+                    break;
+                }
+                else
+                {
+                    m--;
+                }
+            }
         }
+        if(ok) break;
     }
 }
+
