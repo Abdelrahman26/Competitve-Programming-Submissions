@@ -80,21 +80,31 @@ int main()
         loop(n) if(x[i] == y[i]) arr[i] = 1;
         for(int i = 'a'; i <= 't' ; i++)
         {
-            char ch = 'z';
-            for(int j = 0 ;j < n ;j++)
+            for(int j = 'a' ; j < i ;j++)
             {
-                if(x[j] == i && x[j] < y[j])
+                bool ok = 0;
+                for(int k = 0 ;k < n ;k++)
                 {
-                    ch = min(ch,y[j]);
+                    if(arr[k]) continue;
+                    if(x[k] == j && y[k] == i)
+                    {
+                        ok = 1;
+                        cnt++;
+                        break;
+                    }
                 }
-            }
-            if(ch != 'z')
-            {
-                for(int j = 0 ;j < n; j++)
+                if(ok)
                 {
-                    if(x[j] == i && x[j] < y[j]) x[j] = ch;
+                    for(int k = 0 ;k < n ;k++)
+                    {
+                        if(arr[k]) continue;
+                        if(x[k] == j)
+                        {
+                            x[k] = i;
+                        }
+                        if(x[k] == y[k]) arr[k] = 1;
+                    }
                 }
-                cnt++;
             }
         }
         cout << cnt << endl;
