@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+//#include <bits/stdc++.h>
 #include <algorithm>
 #include <iostream>
 #include <iomanip>
@@ -63,11 +63,11 @@ int main()
     cin >> t;
     while(t--)
     {
-        int cnt = 0;
         int n;
         cin >> n;
         string x,y;
         cin >> x >> y;
+        bool arr[n] = {0};
         bool ct = 0;
         loop(n) if(x[i] > y[i])
         {
@@ -76,34 +76,27 @@ int main()
             break;
         }
         if(ct) continue;
-        vector<vector<int> >g(20);
-        bool vis[22];
-        loop(22) vis[i] = 1;
-        for(int i = 0 ;i < n ;i++)
+        int cnt = 0;
+        loop(n) if(x[i] == y[i]) arr[i] = 1;
+        for(int i = 'a'; i <= 't' ; i++)
         {
-            g[y[i] - 'a'].push_back(x[i] - 'a');
-            g[x[i] - 'a'].push_back(y[i] - 'a');
-            vis[x[i] - 'a'] = 0;
-            vis[y[i] - 'a'] = 0;
-        }
-        function<void(int)> dfs = [&](int node)
-		{
-			vis[node] = 1;
-            for (auto v : g[node])
-            if (!vis[v])
+            char ch = 'z';
+            for(int j = 0 ;j < n ;j++)
             {
-                cnt++;
-                dfs(v);
+                if(x[j] == i && x[j] < y[j])
+                {
+                    ch = min(ch,y[j]);
+                }
             }
-		};
-        loop(20)
-        {
-            if(!vis[i])
+            if(ch != 'z')
             {
-                dfs(i);
+                for(int j = 0 ;j < n; j++)
+                {
+                    if(x[j] == i && x[j] < y[j]) x[j] = ch;
+                }
+                cnt++;
             }
         }
         cout << cnt << endl;
-        g.clear();
     }
 }
