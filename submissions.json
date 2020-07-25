@@ -89,6 +89,24 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF87972967": {
+    "contest_id": 1384,
+    "language": "GNU C++14",
+    "path": "codeforces\\1384\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Common Prefixes",
+    "problem_url": "https://codeforces.com/contest/1384/problem/A",
+    "submission_id": "CF87972967",
+    "submission_url": "https://codeforces.com/contest/1384/submission/87972967",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "strings",
+      "*1200"
+    ],
+    "timestamp": "Jul/25/2020 11:00"
+  },
   "CF88015230": {
     "contest_id": 1384,
     "language": "GNU C++14",
