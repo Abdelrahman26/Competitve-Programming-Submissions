@@ -89,6 +89,22 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF89074141": {
+    "contest_id": 1399,
+    "language": "GNU C++14",
+    "path": "codeforces\\1399\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Gifts Fixing",
+    "problem_url": "https://codeforces.com/contest/1399/problem/B",
+    "submission_id": "CF89074141",
+    "submission_url": "https://codeforces.com/contest/1399/submission/89074141",
+    "tags": [
+      "greedy",
+      "*800"
+    ],
+    "timestamp": "Aug/06/2020 00:10"
+  },
   "CF89074169": {
     "contest_id": 1399,
     "language": "GNU C++14",
