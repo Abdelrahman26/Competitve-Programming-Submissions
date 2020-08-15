@@ -72,24 +72,23 @@ int main()
         int arr[n + 9] = {0};
         loop(x.size())
         {
-            arr[i] = x[i] - '0' - 1;
+            arr[i + 1] = x[i] - '0';
         }
         int pref[n + 9] = {0};
-        loop(n)
+        loop(n + 1)
         {
-            if(i == 0) pref[i] = arr[i];
+            if(i == 0) continue;
             pref[i] = pref[i - 1] + arr[i];
         }
 
         map<int,int>mp;
-        mp[0] = 1;
-        int sum = 0;
-        ll ans  = 0;
-        loop(n)
+        ll ans = 0;
+        for(int i = 1 ; i <= n; i++)
         {
-            sum += arr[i];
-            ans += mp[sum];
-            mp[sum]++;
+            int a = i - pref[i - 1];
+            mp[i - pref[i - 1]]++; /// left equation
+            int val = i - pref[i] + 1; /// right equation
+            ans += mp[val];
         }
         cout << ans << endl;
     }
