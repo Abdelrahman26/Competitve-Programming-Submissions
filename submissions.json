@@ -89,6 +89,23 @@
     ],
     "timestamp": "Dec/29/2020 15:28"
   },
+  "CF94572229": {
+    "contest_id": 620,
+    "language": "GNU C++17",
+    "path": "codeforces\\620\\D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Professor GukiZ and Two Arrays",
+    "problem_url": "https://codeforces.com/contest/620/problem/D",
+    "submission_id": "CF94572229",
+    "submission_url": "https://codeforces.com/contest/620/submission/94572229",
+    "tags": [
+      "binary search",
+      "two pointers",
+      "*2200"
+    ],
+    "timestamp": "Oct/03/2020 15:01"
+  },
   "CF96489975": {
     "contest_id": 1433,
     "language": "GNU C++17",
