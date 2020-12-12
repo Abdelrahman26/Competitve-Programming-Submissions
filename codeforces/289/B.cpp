@@ -65,36 +65,14 @@ void init()
     //freopen("output.txt","w",stdout);
     #endif
 }
-int arr[100000];
-vi v;
-int N,d;
-int calc(int mid_point)
-{
-    int ans = 0;
-    loop(N)
-        ans += abs(mid_point - arr[i])/d;
-    return ans;
-}
-int optimize(int l, int r)
-{
-    while(l < r)
-    {
-        int mid = (l + r) / 2;
-        if(calc(v[mid]) < calc(v[mid + 1]))
-        {
-            r = mid;
-        }
-        else l = mid + 1;
-    }
-    return calc(v[l]);
-}
 /// <<----;------------------------------------------------------------------------->>
 int main()
 {
     init();
-    int n,m;
+    int n,m,d;
     cin >> n >> m >> d;
-    N = n * m;
+    int arr[n*m+9];
+    int N = n * m;
     loop(N) cin >> arr[i];
     sort(arr,arr+N);
     loop(N)
@@ -102,11 +80,8 @@ int main()
         if(abs(arr[0] - arr[i])%d)
             return cout << -1,0;
     }
-    set<int>s;
-    loop(N)
-        s.insert(arr[i]);
-    for(auto x:s)
-        v.push_back(x);
-    int sz = v.size();
-    cout << optimize(0, sz - 1);
+    ll sum = 0;
+    loop(n*m)
+      sum += abs(arr[i] - arr[(n*m)/2])/d;
+    cout << sum << endl;
 }
